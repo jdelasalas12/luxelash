@@ -1,0 +1,29 @@
+.chakra_custom-input {
+	width: 100%;
+	min-width: var(--input-height);
+	outline: 0;
+	position: relative;
+	appearance: none;
+	text-align: start;
+	height: var(--input-height);
+	--focus-color: var(--chakra-colors-color-palette-focus-ring);
+	--error-color: var(--chakra-colors-border-error);
+	font-size: var(--chakra-font-sizes-sm);
+	line-height: 1.25rem;
+	padding-inline: var(--chakra-spacing-3);
+	--input-height: var(--chakra-sizes-10);
+	--focus-ring-color: var(--focus-color);
+
+	--bg-currentcolor: var(--chakra-colors-secondary-100);
+	border: 1px solid;
+	border-color: var(--chakra-colors-primary-200);
+	border-radius: 10px;
+}
+
+.react-datepicker-wrapper {
+	width: 100%;
+}
+
+input::placeholder {
+	color: #000;
+}
