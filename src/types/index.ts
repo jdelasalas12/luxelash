@@ -31,7 +31,8 @@ export interface ContactInfo {
 	email: string;
 	hours: {
 		weekdays: string;
-		weekend: string;
+		weekend1: string;
+		weekend2: string;
 	};
 }
 

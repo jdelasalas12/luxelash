@@ -46,7 +46,7 @@ const ServicesSection = () => {
 					</VStack>
 
 					<SimpleGrid
-						columns={{ base: 1, md: 2, lg: 4 }}
+						columns={{ base: 1, md: 2, lg: 2 }}
 						gap={8}
 						w='full'
 					>

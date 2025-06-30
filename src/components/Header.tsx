@@ -64,7 +64,7 @@ const Header = ({ onBookingClick }: HeaderProps) => {
 					fontFamily='heading'
 					letterSpacing='-0.5px'
 				>
-					Lift Lash by Mendy
+					LuxeLash by Mendy
 				</Text>
 
 				{/* Desktop Navigation */}

@@ -3,30 +3,16 @@ import type { Service, Testimonial, ContactInfo, Booking } from '@/types';
 export const services: Service[] = [
 	{
 		id: '1',
-		icon: 'eye',
-		title: 'Eyelash Extensions',
-		description: 'Individual lash extensions for length, volume, and dramatic effect. Lasts 3-4 weeks with proper care.',
-		price: 'SAR 50',
-	},
-	{
-		id: '2',
 		icon: 'magic',
 		title: 'Lash Lifts',
 		description: 'Natural curl enhancement that lifts and defines your existing lashes. Perfect for a natural, everyday look.',
-		price: 'SAR 80',
+		price: 'SAR 90',
 	},
 	{
-		id: '3',
+		id: '2',
 		icon: 'tint',
 		title: 'Lash Tinting',
 		description: 'Semi-permanent dye to darken and define your lashes. Great for light-colored or sparse lashes.',
-		price: 'SAR 45',
-	},
-	{
-		id: '4',
-		icon: 'star',
-		title: 'Full Lash Package',
-		description: 'Complete transformation with lift, tint, and conditioning treatment. Our most popular service.',
 		price: 'SAR 100',
 	},
 ];
@@ -68,11 +54,12 @@ export const testimonials: Testimonial[] = [
 
 export const contactInfo: ContactInfo = {
 	address: '123 Beauty Lane, Aesthetic District\nCity, State 12345',
-	phone: '(555) 123-LASH',
+	phone: '+966 503 635 583',
 	email: 'hello@liftlash.com',
 	hours: {
-		weekdays: 'Thursday: 10PM - 1AM',
-		weekend: 'Friday: 3PM - 1AM',
+		weekdays: 'Thursday: 9:30PM - 11PM',
+		weekend1: 'Friday: 5PM - 12MN',
+		weekend2: 'Saturday: 9:30PM - 11PM',
 	},
 };
 

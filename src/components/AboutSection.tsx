@@ -76,7 +76,7 @@ const AboutSection = () => {
 							zIndex={1}
 						/>
 						<Image
-							src='https://cdn.shopify.com/s/files/1/0508/2569/1285/files/Lashes1-Mobile-1600-x-1000_1024x1024.jpg?v=1695308654'
+							src='/testimonials/why-choose.jpg'
 							alt='Professional lash technician working'
 							w='full'
 							h='400px'

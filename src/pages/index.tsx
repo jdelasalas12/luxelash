@@ -18,7 +18,7 @@ export default function Home() {
 	return (
 		<>
 			<Head>
-				<title>Lift Lash by Mendy</title>
+				<title>LuxeLash by Mendy</title>
 				<meta
 					name='description'
 					content='Transform your look with our premium eyelash services. From extensions to lifts, we create stunning results that enhance your natural beauty.'

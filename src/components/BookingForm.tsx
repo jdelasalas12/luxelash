@@ -3,7 +3,7 @@
 import React, { useState, useEffect } from 'react';
 import { Box, Button, Stack, Input, Textarea, NativeSelect, Field } from '@chakra-ui/react';
 import type { BookingFormData } from '@/types';
-import { isThursday, isFriday, parse, format } from 'date-fns';
+import { isThursday, isFriday, isSaturday, parse, format } from 'date-fns';
 import DatePicker from 'react-datepicker';
 import 'react-datepicker/dist/react-datepicker.css';
 import { db } from '@/services/firebase';
@@ -13,16 +13,42 @@ interface BookingFormProps {
 	onSubmit: (data: BookingFormData) => void;
 }
 
-const isBookingDay = (date: Date) => isThursday(date) || isFriday(date);
+const isBookingDay = (date: Date) => isThursday(date) || isFriday(date) || isSaturday(date);
 
 const getTimeOptions = (date: Date | null): string[] => {
 	if (!date) return [];
-	if (isThursday(date)) {
-		return ['22:00', '22:30', '23:00', '23:30', '00:00', '00:30'];
+
+	const generateTimeSlots = (startHour: number, startMinute: number, endHour: number, endMinute: number): string[] => {
+		const times: string[] = [];
+		const current = new Date();
+		current.setHours(startHour, startMinute, 0, 0);
+
+		const end = new Date();
+		end.setHours(endHour, endMinute, 0, 0);
+
+		// Handle midnight wrap
+		if (end <= current) {
+			end.setDate(end.getDate() + 1);
+		}
+
+		while (current <= end) {
+			const hours = current.getHours().toString().padStart(2, '0');
+			const minutes = current.getMinutes().toString().padStart(2, '0');
+			times.push(`${hours}:${minutes}`);
+			current.setMinutes(current.getMinutes() + 30);
+		}
+
+		return times;
+	};
+
+	if (isThursday(date) || isSaturday(date)) {
+		return generateTimeSlots(21, 30, 23, 0);
 	}
+
 	if (isFriday(date)) {
-		return ['15:00', '15:30', '16:00', '16:30', '17:00', '17:30', '18:00', '18:30', '19:00', '19:30', '20:00', '20:30', '21:00', '21:30', '22:00', '22:30', '23:00', '23:30', '00:00', '00:30'];
+		return generateTimeSlots(17, 0, 0, 0);
 	}
+
 	return [];
 };
 
@@ -159,10 +185,8 @@ const BookingForm = ({ onSubmit }: BookingFormProps) => {
 							_focus={{ borderColor: 'primary.500', bg: 'white', boxShadow: '0 0 0 3px rgba(212, 165, 165, 0.1)' }}
 						>
 							<option value=''>Select a service</option>
-							<option value='Eyelash Extensions'>Eyelash Extensions</option>
 							<option value='Lash Lifts'>Lash Lifts</option>
 							<option value='Lash Tinting'>Lash Tinting</option>
-							<option value='Full Lash Package'>Full Lash Package</option>
 						</NativeSelect.Field>
 						<NativeSelect.Indicator />
 					</NativeSelect.Root>

@@ -14,8 +14,6 @@ const BookingSection = () => {
 	const [isModalOpen, setIsModalOpen] = useState(false);
 
 	const handleBookingSubmit = async (data: BookingFormData) => {
-		console.log('data', data);
-
 		const dateTimeKey = `${data.date}_${data.time}`;
 		const bookingsRef = ref(db, 'bookings');
 
@@ -113,17 +111,7 @@ const BookingSection = () => {
 									fontWeight='600'
 									mb={2}
 								>
-									📍 Visit Us
-								</Text>
-								<Text whiteSpace='pre-line'>{contactInfo.address}</Text>
-							</Box>
-							<Box>
-								<Text
-									fontSize='xl'
-									fontWeight='600'
-									mb={2}
-								>
-									📞 Call Us
+									📞 Call Us (Whatsapp)
 								</Text>
 								<Text>{contactInfo.phone}</Text>
 							</Box>
@@ -136,7 +124,8 @@ const BookingSection = () => {
 									⏰ Hours
 								</Text>
 								<Text>{contactInfo.hours.weekdays}</Text>
-								<Text>{contactInfo.hours.weekend}</Text>
+								<Text>{contactInfo.hours.weekend1}</Text>
+								<Text>{contactInfo.hours.weekend2}</Text>
 							</Box>
 						</VStack>
 					</VStack>

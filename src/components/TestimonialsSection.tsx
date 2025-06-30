@@ -2,17 +2,20 @@
 'use client';
 
 import React from 'react';
+import Image from 'next/image';
 import { Box, Container, Heading, Text, VStack } from '@chakra-ui/react';
 import Slider from 'react-slick';
-import { ReactCompareSlider, ReactCompareSliderImage } from 'react-compare-slider';
+// import { ReactCompareSlider, ReactCompareSliderImage } from 'react-compare-slider';
 
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 
-const imagePairs = [
-	{ before: '/testimonials/before-1.png', after: '/testimonials/after-1.png' },
-	{ before: '/testimonials/before-2.png', after: '/testimonials/after-2.png' },
-	{ before: '/testimonials/before-3.png', after: '/testimonials/after-3.png' },
+// const imagePairs = [{ before: '/testimonials/testimonial-1.jpg', after: '/testimonials/testimonial-1.jpg' }];
+
+const testimonialImages = [
+	{
+		img: '/testimonials/testimonial-1.jpg',
+	},
 ];
 
 const TestimonialsSection = () => {
@@ -20,9 +23,9 @@ const TestimonialsSection = () => {
 		dots: true,
 		infinite: true,
 		speed: 500,
-		slidesToShow: 3,
-		slidesToScroll: 1,
-		centerMode: true,
+		// slidesToShow: 3,
+		// slidesToScroll: 1,
+		// centerMode: true,
 		autoplay: true,
 		autoplaySpeed: 4000,
 		responsive: [
@@ -70,18 +73,31 @@ const TestimonialsSection = () => {
 						color='gray.600'
 						maxW='600px'
 					>
-						See the magic for yourself. Slide to compare real client before and after lash enhancements.
+						See the transformation—before and after lash enhancements.
 					</Text>
 				</VStack>
 			</Container>
-			<Slider {...settings}>
-				{imagePairs.map((pair, index) => (
+
+			{testimonialImages.map((item, index) => (
+				<Box
+					key={index}
+					px={{ base: 4, md: 12 }}
+					mx='auto'
+				>
 					<Box
-						key={index}
-						px={{ base: 4, md: 12 }}
+						mx='auto'
+						w='max-content'
 					>
-						<ReactCompareSlider
+						<Image
+							src={item.img}
+							width={500}
+							height={500}
+							alt='Before and After'
+						/>
+					</Box>
+					{/* <ReactCompareSlider
 							boundsPadding={0}
+							portrait
 							style={{
 								height: '600px',
 								width: '100%',
@@ -106,10 +122,9 @@ const TestimonialsSection = () => {
 									}}
 								/>
 							}
-						/>
-					</Box>
-				))}
-			</Slider>
+						/> */}
+				</Box>
+			))}
 		</Box>
 	);
 };
