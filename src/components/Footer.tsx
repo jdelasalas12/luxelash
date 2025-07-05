@@ -37,7 +37,7 @@ const Footer = () => {
 							color='primary.500'
 							letterSpacing='-0.3px'
 						>
-							LuxeLash Studio
+							LuxeLash by Mendy
 						</Heading>
 						<Text
 							color='gray.300'
@@ -45,7 +45,7 @@ const Footer = () => {
 						>
 							Your premier destination for professional eyelash services. Enhancing natural beauty with expert care and premium products.
 						</Text>
-						<HStack
+						{/* <HStack
 							gap={3}
 							mt={4}
 						>
@@ -85,7 +85,7 @@ const Footer = () => {
 							>
 								<FaTiktok />
 							</IconButton>
-						</HStack>
+						</HStack> */}
 					</VStack>
 
 					<VStack
@@ -101,14 +101,14 @@ const Footer = () => {
 						>
 							Services
 						</Heading>
-						<Text
+						{/* <Text
 							color='gray.300'
 							cursor='pointer'
 							_hover={{ color: 'primary.500' }}
 							onClick={() => scrollToSection('#services')}
 						>
 							Eyelash Extensions
-						</Text>
+						</Text> */}
 						<Text
 							color='gray.300'
 							cursor='pointer'
@@ -125,14 +125,14 @@ const Footer = () => {
 						>
 							Lash Tinting
 						</Text>
-						<Text
+						{/* <Text
 							color='gray.300'
 							cursor='pointer'
 							_hover={{ color: 'primary.500' }}
 							onClick={() => scrollToSection('#services')}
 						>
 							Full Lash Package
-						</Text>
+						</Text> */}
 					</VStack>
 
 					<VStack
@@ -148,14 +148,14 @@ const Footer = () => {
 						>
 							Contact Info
 						</Heading>
-						<Text
+						{/* <Text
 							color='gray.300'
 							whiteSpace='pre-line'
 						>
 							📍 {contactInfo.address}
-						</Text>
+						</Text> */}
 						<Text color='gray.300'>📞 {contactInfo.phone}</Text>
-						<Text color='gray.300'>✉️ {contactInfo.email}</Text>
+						{/* <Text color='gray.300'>✉️ {contactInfo.email}</Text> */}
 					</VStack>
 
 					<VStack
@@ -172,7 +172,8 @@ const Footer = () => {
 							Hours
 						</Heading>
 						<Text color='gray.300'>{contactInfo.hours.weekdays}</Text>
-						<Text color='gray.300'>{contactInfo.hours.weekend}</Text>
+						<Text color='gray.300'>{contactInfo.hours.weekend1}</Text>
+						<Text color='gray.300'>{contactInfo.hours.weekend2}</Text>
 					</VStack>
 				</SimpleGrid>
 
@@ -183,7 +184,7 @@ const Footer = () => {
 					color='gray.400'
 					mt={8}
 				>
-					© 2025 Lift Lash by Mendy. All rights reserved.
+					© 2025 LuxeLash by Mendy. All rights reserved.
 				</Text>
 			</Container>
 		</Box>
