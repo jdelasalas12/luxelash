@@ -17,7 +17,6 @@ export interface Testimonial {
 
 export interface BookingFormData {
 	name: string;
-	email: string;
 	phone: string;
 	service: string;
 	date: string;

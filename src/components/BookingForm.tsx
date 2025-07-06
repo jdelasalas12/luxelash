@@ -55,7 +55,6 @@ const getTimeOptions = (date: Date | null): string[] => {
 const BookingForm = ({ onSubmit }: BookingFormProps) => {
 	const [formData, setFormData] = useState<BookingFormData>({
 		name: '',
-		email: '',
 		phone: '',
 		service: '',
 		date: '',
@@ -115,7 +114,7 @@ const BookingForm = ({ onSubmit }: BookingFormProps) => {
 		try {
 			await new Promise((resolve) => setTimeout(resolve, 1000));
 			onSubmit(formData);
-			setFormData({ name: '', email: '', phone: '', service: '', date: '', time: '', notes: '' });
+			setFormData({ name: '',  phone: '', service: '', date: '', time: '', notes: '' });
 			setSelectedDate(null);
 		} catch (error) {
 			console.log('error', error);
@@ -144,19 +143,7 @@ const BookingForm = ({ onSubmit }: BookingFormProps) => {
 					/>
 				</Field.Root>
 
-				<Field.Root>
-					<Field.Label>Email Address</Field.Label>
-					<Input
-						type='email'
-						name='email'
-						value={formData.email}
-						onChange={handleChange}
-						border='1px solid'
-						borderColor='primary.200'
-						borderRadius='10px'
-						_focus={{ borderColor: 'primary.500', bg: 'white', boxShadow: '0 0 0 3px rgba(212, 165, 165, 0.1)' }}
-					/>
-				</Field.Root>
+				
 
 				<Field.Root>
 					<Field.Label>Phone Number</Field.Label>

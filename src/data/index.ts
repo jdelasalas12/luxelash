@@ -15,6 +15,7 @@ export const services: Service[] = [
 		description: 'Semi-permanent dye to darken and define your lashes. Great for light-colored or sparse lashes.',
 		price: 'SAR 100',
 	},
+	
 ];
 
 export const testimonials: Testimonial[] = [
@@ -119,4 +120,17 @@ export const mockBookings: Booking[] = [
 		status: 'pending',
 		createdAt: Date.now() - 18000000,
 	},
+];
+
+
+export const testimonialData = [
+//   {
+//     source: "/testimonials/testimonial-1.jpg",
+//     type: "image",
+//   },
+  {
+    source: "/testimonials/testimonials-vid-1.mp4",
+    type: "video",
+  },
+  
 ];
