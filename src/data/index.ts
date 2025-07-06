@@ -4,14 +4,14 @@ export const services: Service[] = [
 	{
 		id: '1',
 		icon: 'magic',
-		title: 'Lash Lifts',
+		title: 'Lash Lift',
 		description: 'Natural curl enhancement that lifts and defines your existing lashes. Perfect for a natural, everyday look.',
 		price: 'SAR 90',
 	},
 	{
 		id: '2',
 		icon: 'tint',
-		title: 'Lash Tinting',
+		title: 'Lash Lift plus Tint',
 		description: 'Semi-permanent dye to darken and define your lashes. Great for light-colored or sparse lashes.',
 		price: 'SAR 100',
 	},

@@ -115,7 +115,7 @@ const Footer = () => {
 							_hover={{ color: 'primary.500' }}
 							onClick={() => scrollToSection('#services')}
 						>
-							Lash Lifts
+							Lash Lift
 						</Text>
 						<Text
 							color='gray.300'
@@ -123,7 +123,7 @@ const Footer = () => {
 							_hover={{ color: 'primary.500' }}
 							onClick={() => scrollToSection('#services')}
 						>
-							Lash Tinting
+							Lash Lift + Tint
 						</Text>
 						{/* <Text
 							color='gray.300'

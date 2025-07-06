@@ -83,7 +83,7 @@ const TestimonialsSection = () => {
                   alt="Before and After"
                 />
               ) : (
-                <video width="100%" height="240" preload="none" autoPlay muted>
+                <video width="100%" height="240" preload="none" autoPlay loop muted>
                   <source src={item.source} type="video/mp4" />
                 </video>
               )}
