@@ -11,7 +11,7 @@ export const services: Service[] = [
 	{
 		id: '2',
 		icon: 'tint',
-		title: 'Lash Lift plus Tint',
+		title: 'Lash Lift \u002B Tint',
 		description: 'Semi-permanent dye to darken and define your lashes. Great for light-colored or sparse lashes.',
 		price: 'SAR 100',
 	},
