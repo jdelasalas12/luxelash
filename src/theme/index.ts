@@ -31,6 +31,7 @@ const config = defineConfig({
 			},
 			fonts: {
 				heading: { value: "'Playfair Display', serif" },
+				headingname: { value: "'Birthstone', cursive "},
 				body: { value: "'Poppins', sans-serif" },
 			},
 		},

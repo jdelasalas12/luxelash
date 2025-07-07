@@ -57,7 +57,7 @@ const HeroSection = ({ onBookingClick }: HeroSectionProps) => {
 						color='gray.800'
 						letterSpacing='-1px'
 					>
-						Beautiful Lashes, Beautiful You
+						Beautiful Lashes, Beautiful You!
 					</Heading>
 
 					<Text
@@ -66,7 +66,13 @@ const HeroSection = ({ onBookingClick }: HeroSectionProps) => {
 						maxW='600px'
 						lineHeight='1.6'
 					>
-						Transform your look with our premium eyelash services. From extensions to lifts, we create stunning results that enhance your natural beauty.
+						Beautiful lashes, beautiful you!
+
+					✨ Say hello to effortless beauty! ✨  
+					No extensions, no mascara — just your natural lashes lifted & tinted to perfection! 💕  
+
+					Get that wide-eyed, fresh look that lasts up to 8 weeks!  
+					Perfect for busy queens who want to wake up ready every day 👑
 					</Text>
 
 					<HStack

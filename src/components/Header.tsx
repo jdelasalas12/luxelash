@@ -2,7 +2,7 @@
 
 import type React from 'react';
 import { useState, useEffect } from 'react';
-import { Box, Flex, Text, HStack, Button } from '@chakra-ui/react';
+import { Box, Flex, Text, HStack, Button,} from '@chakra-ui/react';
 
 interface HeaderProps {
 	onBookingClick: () => void;
@@ -64,9 +64,9 @@ const Header = ({ onBookingClick }: HeaderProps) => {
 					fontFamily='heading'
 					letterSpacing='-0.5px'
 				>
-					LuxeLash by Mendy
+					LUXELASH by Mendy
 				</Text>
-
+				
 				{/* Desktop Navigation */}
 				<HStack
 					gap={8}

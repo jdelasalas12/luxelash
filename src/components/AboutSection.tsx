@@ -24,7 +24,7 @@ const AboutSection = () => {
 							color='gray.800'
 							letterSpacing='-0.5px'
 						>
-							Why Choose LuxeLash Studio?
+							Why Choose LuxeLash by Mendy? 💖
 						</Heading>
 
 						<Text
@@ -32,13 +32,20 @@ const AboutSection = () => {
 							color='gray.600'
 							lineHeight='1.7'
 						>
-							With over 5 years of experience in the beauty industry, our certified lash technicians are passionate about creating stunning results that enhance your natural beauty.
+				✨ Expert Touch – Trained hands with a passion for enhancing natural beauty.<br></br>
+				✨ Premium Products – Only high-quality, safe, and gentle lash solutions. <br></br>
+				✨ Long-lasting Results – One session can last up to 6–8 weeks! <br></br>
+				✨ Hygiene First – Strict cleanliness and client safety protocols. <br></br>
+				✨ Personalized Service – Every lash lift is tailored to your eye shape and lash type.<br></br>
+
+				Your lashes deserve luxe care – choose LuxeLash by Mendy! 💕<br></br>
+				#LashLift #LuxeLashByMendy #NaturalBeauty #RiyadhLashes
 						</Text>
 
 						<Text
 							fontSize='lg'
 							color='gray.600'
-							lineHeight='1.7'
+							lineHeight='1.5'
 						>
 							We use only premium, hypoallergenic products and maintain the highest standards of hygiene and safety. Every treatment is customized to your unique eye shape and desired look.
 						</Text>
