@@ -173,7 +173,7 @@ const BookingForm = ({ onSubmit }: BookingFormProps) => {
 						>
 							<option value=''>Select a service</option>
 							<option value='Lash Lifts'>Lash Lifts</option>
-							<option value='Lash Tinting'>Lash Tinting</option>
+							<option value='Lash Tinting'>Lash + Tint</option>
 						</NativeSelect.Field>
 						<NativeSelect.Indicator />
 					</NativeSelect.Root>

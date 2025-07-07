@@ -27,6 +27,14 @@ const HeroSection = ({ onBookingClick }: HeroSectionProps) => {
 			alignItems='center'
 			justifyContent='center'
 			position='relative'
+			css={{
+				'@media screen and (max-width:576px)': {
+					minH:'calc(100vh + 80px)'
+				},
+				'@media screen and (max-width:350px)':{
+					minH:'calc(100vh + 200px)'
+				}
+			}}
 		>
 			<Box
 				position='absolute'

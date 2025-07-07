@@ -4,6 +4,8 @@ import type React from 'react';
 import { useState, useEffect } from 'react';
 import { Box, Flex, Text, HStack, Button,} from '@chakra-ui/react';
 
+
+
 interface HeaderProps {
 	onBookingClick: () => void;
 }
@@ -63,8 +65,23 @@ const Header = ({ onBookingClick }: HeaderProps) => {
 					color='primary.500'
 					fontFamily='heading'
 					letterSpacing='-0.5px'
+					 css={{
+						"& .separator" : {
+							fontFamily: "Birthstone",
+							fontWeight:"700",
+							fontSize:'32px',
+							letterSpacing:'4px',
+							margin:'0 4px 0 6px'
+
+						},
+
+						"& .separatorName" :{
+							fontWeight:'400',
+							
+						}
+ 					 }}
 				>
-					LUXELASH by Mendy
+					LUXELASH <span className="separator">by <span className="separatorName">Mendy</span></span>
 				</Text>
 				
 				{/* Desktop Navigation */}
